@@ -1,0 +1,1031 @@
+
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="OnBp5SPv7XalBXROSZpN2iNDIWEZ5Tw4SHnui3ZTfP9uBBmcQZi9G9BpHiE47DSfSjduFky1dEElJovmO35M0g==">
+    <title>Вход в личный кабинет</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="/assets/64ffc59c.de98951eb03924383e9ed79c77cbd1a8/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/64ffc59c.a4d18502a2ccf5f515aaa1a872d99aff/css/style-auth.css" rel="stylesheet">
+<style> 
+#agreement-cookie {position:fixed;width:100%;bottom:0;z-index: 9999; background-color: #ffffff; border-top:1px solid #ccc; display: none;padding: 10px 0 5px 0;font-size:11px;}
+.font-bold {font-weight:bold;}</style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KDWHPGD');</script>    <script type="text/javascript">
+        let showReCaptcha = 1;
+    </script>
+</head>
+
+<body class="loaded">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDWHPGD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="auth-page">
+    <div class="auth-page__head">
+        <a href="/" class="auth-page__head-logo">
+            <img src="/img/ndesign/logo.svg?ver1.0" alt="">
+        </a>
+        <a href="tel:88002348400" class="auth-page__head-phone">8-800-234-84-00</a>
+    </div>
+    <div class="auth-page__body">
+        <div class="login-reg">
+    <div class="login-reg__head">
+        <div class="login-reg__tab selected" data-tab="login">Вход в личный кабинет</div>
+        <div class="login-reg__tab" data-tab="register">Регистрация</div>
+    </div>
+    <div class="login-reg__body">
+        <div class="login-reg__cnt login">
+            <form id="login-form" class="login-reg__form" action="/site/login" method="post">
+<input type="hidden" name="_csrf" value="OnBp5SPv7XalBXROSZpN2iNDIWEZ5Tw4SHnui3ZTfP9uBBmcQZi9G9BpHiE47DSfSjduFky1dEElJovmO35M0g==">                <div class="login-reg__row">
+                    <div class="form-group field-authorizationform-email required">
+<div class="cover-inp"><label class="control-label" for="authorizationform-email">E-mail</label><input type="text" id="authorizationform-email" class="t-inp a-inp" name="AuthorizationForm[email]" placeholder="" aria-required="true"><div class="field-error"></div></div>
+</div>                </div>
+                <div class="login-reg__row">
+                    <div class="form-group field-authorizationform-password required">
+<div class="cover-inp"><label class="control-label" for="authorizationform-password">Пароль</label><input type="password" id="authorizationform-password" class="t-inp a-inp password-field" name="AuthorizationForm[password]" placeholder="" aria-required="true"><span toggle=".password-field" class="toggle-password"></span><div class="field-error"></div></div>
+</div>                </div>
+            </form>        </div>
+        <div class="login-reg__cnt register">
+            <form id="register-form" class="login-reg__form" action="/register/sign" method="post">
+<input type="hidden" name="_csrf" value="OnBp5SPv7XalBXROSZpN2iNDIWEZ5Tw4SHnui3ZTfP9uBBmcQZi9G9BpHiE47DSfSjduFky1dEElJovmO35M0g==">                <div class="login-reg__row">
+                    <div class="form-group field-shortregistrationform-namelegal required">
+<div class="cover-inp"><label class="control-label" for="shortregistrationform-namelegal">Юридическое имя*</label><input type="text" id="shortregistrationform-namelegal" class="t-inp a-inp" name="ShortRegistrationForm[nameLegal]" placeholder="" aria-required="true"><div class="field-error"></div></div>
+</div>                </div>
+                <div class="login-reg__row">
+                    <div class="form-group field-shortregistrationform-name required">
+<div class="cover-inp"><label class="control-label" for="shortregistrationform-name">ФИО*</label><input type="text" id="shortregistrationform-name" class="t-inp a-inp" name="ShortRegistrationForm[name]" placeholder="" aria-required="true"><div class="field-error"></div></div>
+</div>                </div>
+                <div class="login-reg__row">
+                    <div class="form-group field-shortregistrationform-phone required">
+<div class="cover-inp"><label class="control-label" for="shortregistrationform-phone">Телефон*</label><input type="text" id="shortregistrationform-phone" class="t-inp a-inp" name="ShortRegistrationForm[phone]" placeholder="" aria-required="true"><div class="field-error"></div></div>
+</div>                </div>
+                <div class="login-reg__row">
+                    <div class="form-group field-shortregistrationform-email required">
+<div class="cover-inp"><label class="control-label" for="shortregistrationform-email">E-mail*</label><input type="text" id="shortregistrationform-email" class="t-inp a-inp" name="ShortRegistrationForm[email]" placeholder="" aria-required="true"><div class="field-error"></div></div>
+</div>                </div>
+                <div class="login-reg__row">
+                    <div class="form-group field-shortregistrationform-url">
+<div class="cover-inp"><label class="control-label" for="shortregistrationform-url">Ваш сайт</label><input type="text" id="shortregistrationform-url" class="t-inp a-inp" name="ShortRegistrationForm[url]" placeholder=""><div class="field-error"></div></div>
+</div>                </div>
+                <div class="login-reg__row">
+                    <div class="form-group field-shortregistrationform-citycode">
+<div class="select-wrap"><select id="shortregistrationform-citycode" class="js-select2" name="ShortRegistrationForm[cityCode]">
+<option value="5">Абакан ( Хакасия Респ )</option>
+<option value="01413">Абинск ( Краснодарский край Абинский р-н )</option>
+<option value="Н00704950">Абовян ( Котайкская )</option>
+<option value="04706">Азов ( Ростовская обл )</option>
+<option value="03793">Аксай ( Ростовская обл Аксайский р-н )</option>
+<option value="Н00189087">Актау ( Мангистауская )</option>
+<option value="Н00163808">Актобе ( Актюбинская )</option>
+<option value="Н01023061">Алаверды ( Лорийская )</option>
+<option value="04758">Алапаевск ( Свердловская обл )</option>
+<option value="04449">Алейск ( Алтайский край )</option>
+<option value="02199">Александров ( Владимирская обл Александровский р-н )</option>
+<option value="01928">Алексеевка ( Белгородская обл Алексеевский р-н )</option>
+<option value="04306">Алексин ( Тульская обл Алексинский р-н )</option>
+<option value="Н00163804">Алма-Ата ( Алматинская )</option>
+<option value="22091">Алушта ( Крым Респ )</option>
+<option value="92">Альметьевск ( Татарстан Респ Альметьевский р-н )</option>
+<option value="Н00703205">Амасия ( Ширакская )</option>
+<option value="04503">Амурск ( Хабаровский край )</option>
+<option value="189">Анапа ( Краснодарский край Анапский р-н )</option>
+<option value="240">Ангарск ( Иркутская обл )</option>
+<option value="Н00087161">Андреевка ( Московская обл Солнечногорский р-н )</option>
+<option value="Н00703922">Апаран ( Арагацотнская )</option>
+<option value="93">Апатиты ( Мурманская обл )</option>
+<option value="03364">Апрелевка ( Московская обл Наро-Фоминский р-н )</option>
+<option value="207">Арзамас ( Нижегородская обл )</option>
+<option value="Н00705387">Армавир ( Армавирская )</option>
+<option value="174">Армавир ( Краснодарский край )</option>
+<option value="04482">Арсеньев ( Приморский край )</option>
+<option value="Н00704799">Арташат ( Араратская )</option>
+<option value="237">Артем ( Приморский край )</option>
+<option value="04212">Артемовский ( Свердловская обл Артемовский р-н )</option>
+<option value="6">Архангельск ( Архангельская обл )</option>
+<option value="136">Асбест ( Свердловская обл )</option>
+<option value="7">Астрахань ( Астраханская обл )</option>
+<option value="04723">Аткарск ( Саратовская обл )</option>
+<option value="Н00163809">Атырау ( Атырауская )</option>
+<option value="Н00026846">Афипский ( Краснодарский край Северский р-н )</option>
+<option value="Н00703267">Ахурян ( Ширакская )</option>
+<option value="192">Ачинск ( Красноярский край )</option>
+<option value="04330">Аша ( Челябинская обл Ашинский р-н )</option>
+<option value="Н00703967">Аштарак ( Арагацотнская )</option>
+<option value="Н00705411">Баграмян ( Армавирская )</option>
+<option value="179">Балаково ( Саратовская обл )</option>
+<option value="03401">Балахна ( Нижегородская обл Балахнинский р-н )</option>
+<option value="176">Балашиха ( Московская обл )</option>
+<option value="04725">Балашов ( Саратовская обл )</option>
+<option value="Н00195799">Барановичи ( Брестская )</option>
+<option value="Н01013139">Барань ( Витебская )</option>
+<option value="96">Барнаул ( Алтайский край )</option>
+<option value="224">Батайск ( Ростовская обл )</option>
+<option value="22117">Бахчисарай ( Крым Респ Бахчисарайский р-н )</option>
+<option value="03794">Белая Калитва ( Ростовская обл Белокалитвинский р-н )</option>
+<option value="8">Белгород ( Белгородская обл )</option>
+<option value="00148">Белебей ( Башкортостан Респ Белебеевский р-н )</option>
+<option value="212">Белово ( Кемеровская область - Кузбасс обл )</option>
+<option value="Н00693465">Беловодское ( Чуйская )</option>
+<option value="04510">Белогорск ( Амурская обл )</option>
+<option value="Н01008927">Белоозерск ( Брестская )</option>
+<option value="01417">Белореченск ( Краснодарский край Белореченский р-н )</option>
+<option value="Н01023063">Белыничи ( Могилевская )</option>
+<option value="Н00705487">Берд ( Тавушская )</option>
+<option value="160">Бердск ( Новосибирская обл )</option>
+<option value="Н00195828">Береза ( Брестская )</option>
+<option value="Н01019432">Березино ( Минская )</option>
+<option value="9">Березники ( Пермский край )</option>
+<option value="Н01011787">Берёзовка ( Гродненская )</option>
+<option value="180">Березовский ( Свердловская обл )</option>
+<option value="00989">Беслан ( Северная Осетия - Алания Респ Правобережный р-н )</option>
+<option value="Н00104432">Бессоновка ( Пензенская обл Бессоновский р-н )</option>
+<option value="Н01014783">Бешенковичи ( Витебская )</option>
+<option value="205">Бийск ( Алтайский край )</option>
+<option value="04504">Бикин ( Хабаровский край )</option>
+<option value="220">Биробиджан ( Еврейская Аобл )</option>
+<option value="Н00195824">Бишкек ( Чуйская )</option>
+<option value="10">Благовещенск ( Амурская обл )</option>
+<option value="02356">Бобров ( Воронежская обл Бобровский р-н )</option>
+<option value="Н00083829">Боброво ( Московская обл Ленинский р-н )</option>
+<option value="Н00195808">Бобруйск ( Могилевская )</option>
+<option value="04213">Богданович ( Свердловская обл Богдановичский р-н )</option>
+<option value="04308">Богородицк ( Тульская обл Богородицкий р-н )</option>
+<option value="03406">Богородск ( Нижегородская обл Богородский р-н )</option>
+<option value="04246">Бологое ( Тверская обл Бологовский р-н )</option>
+<option value="04313">Болохово ( Тульская обл Киреевский р-н )</option>
+<option value="Н00088652">Большое Козино ( Нижегородская обл Балахнинский р-н )</option>
+<option value="Н01020583">Большое Стиклево ( Минская )</option>
+<option value="166">Бор ( Нижегородская обл )</option>
+<option value="Н00195804">Борисов ( Минская )</option>
+<option value="02358">Борисоглебск ( Воронежская обл Борисоглебский р-н )</option>
+<option value="03431">Боровичи ( Новгородская обл Боровичский р-н )</option>
+<option value="Н01021049">Боровляны ( Минская )</option>
+<option value="02423">Боровск ( Калужская обл Боровский р-н )</option>
+<option value="Н00123761">Борское ( Самарская обл Борский р-н )</option>
+<option value="Н01017504">Браслав ( Витебская )</option>
+<option value="70">Братск ( Иркутская обл )</option>
+<option value="Н00163827">Брест ( Брестская )</option>
+<option value="04602">Бронницы ( Московская обл )</option>
+<option value="11">Брянск ( Брянская обл )</option>
+<option value="00995">Бугульма ( Татарстан Респ Бугульминский р-н )</option>
+<option value="04670">Бугуруслан ( Оренбургская обл )</option>
+<option value="Н01019948">Буда-Кошелево ( Гомельская )</option>
+<option value="01902">Буденновск ( Ставропольский край Буденновский р-н )</option>
+<option value="04671">Бузулук ( Оренбургская обл )</option>
+<option value="04400">Буйнакск ( Дагестан Респ )</option>
+<option value="22160">Бутово ( Московская обл Ленинский р-н )</option>
+<option value="Н01023054">Быхов ( Могилевская )</option>
+<option value="Н00703022">Вайк ( Вайоцдзорская )</option>
+<option value="01929">Валуйки ( Белгородская обл Валуйский р-н )</option>
+<option value="Н00703094">Ванадзор ( Лорийская )</option>
+<option value="Н00030681">Ванино ( Хабаровский край Ванинский р-н )</option>
+<option value="Н00704178">Варденис ( Гехаркуникская )</option>
+<option value="Н00704830">Веди ( Араратская )</option>
+<option value="04694">Великие Луки ( Псковская обл )</option>
+<option value="12">Великий Новгород ( Новгородская обл )</option>
+<option value="01915">Вельск ( Архангельская обл Вельский р-н )</option>
+<option value="Н01019894">Верхнедвинск ( Витебская )</option>
+<option value="Н00131074">Верхнеднепровский ( Смоленская обл Дорогобужский р-н )</option>
+<option value="252">Верхняя Пышма ( Свердловская обл )</option>
+<option value="183">Верхняя Салда ( Свердловская обл Верхнесалдинский р-н )</option>
+<option value="Н01002692">Ветка ( Гомельская )</option>
+<option value="Н00084841">Вешки ( Московская обл )</option>
+<option value="03354">Видное ( Московская обл Ленинский р-н )</option>
+<option value="Н01011507">Вилейка ( Минская )</option>
+<option value="Н00195798">Витебск ( Витебская )</option>
+<option value="02371">Вичуга ( Ивановская обл Вичугский р-н )</option>
+<option value="134">Владивосток ( Приморский край )</option>
+<option value="156">Владикавказ ( Северная Осетия - Алания Респ )</option>
+<option value="13">Владимир ( Владимирская обл )</option>
+<option value="Н00085251">ВНИИССОК ( Московская обл Одинцовский р-н )</option>
+<option value="21759">Внуково ( Москва )</option>
+<option value="14">Волгоград ( Волгоградская обл )</option>
+<option value="131">Волгодонск ( Ростовская обл )</option>
+<option value="04421">Волжск ( Марий Эл Респ )</option>
+<option value="Н00124220">Волжский ( Самарская обл Красноярский р-н )</option>
+<option value="194">Волжский ( Волгоградская обл )</option>
+<option value="Н00195830">Волковыск ( Гродненская )</option>
+<option value="146">Вологда ( Вологодская обл )</option>
+<option value="Н01012323">Воложин ( Минская )</option>
+<option value="04726">Вольск ( Саратовская обл )</option>
+<option value="135">Воркута ( Коми Респ )</option>
+<option value="15">Воронеж ( Воронежская обл )</option>
+<option value="03340">Воскресенск ( Московская обл Воскресенский р-н )</option>
+<option value="Н00160478">Воскресенское ( Москва  Воскресенское п )</option>
+<option value="219">Воткинск ( Удмуртская Респ )</option>
+<option value="241">Всеволожск ( Ленинградская обл Всеволожский р-н )</option>
+<option value="164">Выборг ( Ленинградская обл Выборгский р-н )</option>
+<option value="04654">Выкса ( Нижегородская обл )</option>
+<option value="258">Вышний Волочек ( Тверская обл )</option>
+<option value="02211">Вязники ( Владимирская обл Вязниковский р-н )</option>
+<option value="04228">Вязьма ( Смоленская обл Вяземский р-н )</option>
+<option value="Н00130115">Вязьма-Брянская ( Смоленская обл Вяземский р-н )</option>
+<option value="Н00704190">Гавар ( Гехаркуникская )</option>
+<option value="04229">Гагарин ( Смоленская обл Гагаринский р-н )</option>
+<option value="Н01009491">Ганцевичи ( Брестская )</option>
+<option value="03271">Гатчина ( Ленинградская обл Гатчинский р-н )</option>
+<option value="172">Геленджик ( Краснодарский край )</option>
+<option value="04500">Георгиевск ( Ставропольский край )</option>
+<option value="141">Глазов ( Удмуртская Респ )</option>
+<option value="Н00195812">Глубокое ( Витебская )</option>
+<option value="Н01011364">Глуск ( Могилевская )</option>
+<option value="03371">Голицыно ( Московская обл Одинцовский р-н )</option>
+<option value="Н00087185">Голубое ( Московская обл Солнечногорский р-н )</option>
+<option value="Н00195797">Гомель ( Гомельская )</option>
+<option value="Н01023062">Горис ( Сюникская )</option>
+<option value="Н00195831">Горки ( Могилевская )</option>
+<option value="04390">Горно-Алтайск ( Алтай Респ )</option>
+<option value="208">Городец ( Нижегородская обл Городецкий р-н )</option>
+<option value="Н01015030">Городея ( Минская )</option>
+<option value="Н01002690">Городок ( Витебская )</option>
+<option value="04461">Горячий Ключ ( Краснодарский край )</option>
+<option value="Н00163830">Гродно ( Гродненская )</option>
+<option value="04441">Грозный ( Чеченская Респ )</option>
+<option value="03331">Грязи ( Липецкая обл Грязинский р-н )</option>
+<option value="266">Губкин ( Белгородская обл )</option>
+<option value="04847">Губкинский ( Ямало-Ненецкий АО )</option>
+<option value="04533">Гусь-Хрустальный ( Владимирская обл )</option>
+<option value="Н00703383">Гюмри ( Ширакская )</option>
+<option value="04488">Дальнегорск ( Приморский край )</option>
+<option value="03346">Дедовск ( Московская обл Истринский р-н )</option>
+<option value="04396">Дербент ( Дагестан Респ )</option>
+<option value="04769">Десногорск ( Смоленская обл )</option>
+<option value="Н00693038">Джалал-Абад ( Джалал-Абадская область )</option>
+<option value="22030">Джанкой ( Крым Респ )</option>
+<option value="Н00703070">Джермук ( Вайоцдзорская )</option>
+<option value="Н00195827">Дзержинск ( Минская )</option>
+<option value="170">Дзержинск ( Нижегородская обл )</option>
+<option value="04621">Дзержинский ( Московская обл )</option>
+<option value="Н00090327">Дивеево ( Нижегородская обл Дивеевский р-н )</option>
+<option value="Н00705541">Дилижан ( Тавушская )</option>
+<option value="193">Димитровград ( Ульяновская обл )</option>
+<option value="Н00026027">Динская ( Краснодарский край Динской р-н )</option>
+<option value="03341">Дмитров ( Московская обл )</option>
+<option value="Н01009767">Добруш ( Гомельская )</option>
+<option value="Н01015875">Докшицы ( Витебская )</option>
+<option value="04626">Долгопрудный ( Московская обл )</option>
+<option value="04601">Домодедово ( Московская обл )</option>
+<option value="04699">Донецк ( Ростовская обл )</option>
+<option value="04789">Донской ( Тульская обл )</option>
+<option value="04231">Дорогобуж ( Смоленская обл Дорогобужский р-н )</option>
+<option value="Н01009819">Дрогичин ( Брестская )</option>
+<option value="Н00164092">Дрожжино ( Московская обл Ленинский р-н )</option>
+<option value="Н01017789">Дружный ( Минская )</option>
+<option value="04603">Дубна ( Московская обл )</option>
+<option value="Н00038188">Дубовое ( Белгородская обл Белгородский р-н )</option>
+<option value="Н00120800">Дядьково ( Рязанская обл Рязанский р-н )</option>
+<option value="Н01017494">Дятлово ( Гродненская )</option>
+<option value="01985">Дятьково ( Брянская обл Дятьковский р-н )</option>
+<option value="22068">Евпатория ( Крым Респ )</option>
+<option value="Н01023059">Егегнадзор ( Вайоцдзорская )</option>
+<option value="Н00118968">Егорлыкская ( Ростовская обл Егорлыкский р-н )</option>
+<option value="03343">Егорьевск ( Московская обл )</option>
+<option value="01419">Ейск ( Краснодарский край Ейский р-н )</option>
+<option value="16">Екатеринбург ( Свердловская обл )</option>
+<option value="00997">Елабуга ( Татарстан Респ Елабужский р-н )</option>
+<option value="187">Елец ( Липецкая обл )</option>
+<option value="07136">Елизаветинская ( Краснодарский край )</option>
+<option value="02445">Елизово ( Камчатский край Елизовский р-н )</option>
+<option value="Н01023069">Ельск ( Гомельская )</option>
+<option value="Н00704663">Ереван</option>
+<option value="04494">Ессентуки ( Ставропольский край )</option>
+<option value="04310">Ефремов ( Тульская обл Ефремовский р-н )</option>
+<option value="Н01009926">Жабинка ( Брестская )</option>
+<option value="Н00188396">Жезказган ( Карагандинская )</option>
+<option value="04495">Железноводск ( Ставропольский край )</option>
+<option value="185">Железногорск ( Курская обл )</option>
+<option value="04467">Железногорск ( Красноярский край )</option>
+<option value="04240">Жердевка ( Тамбовская обл Жердевский р-н )</option>
+<option value="250">Жигулевск ( Самарская обл )</option>
+<option value="Н00101346">Жилина ( Орловская обл Орловский р-н )</option>
+<option value="Н01015110">Житковичи ( Гомельская )</option>
+<option value="Н00195816">Жлобин ( Гомельская )</option>
+<option value="Н01002697">Жодино ( Минская )</option>
+<option value="02429">Жуков ( Калужская обл Жуковский р-н )</option>
+<option value="04605">Жуковский ( Московская обл )</option>
+<option value="Н00160618">завода Мосрентген ( Москва  Мосрентген п )</option>
+<option value="03410">Заволжье ( Нижегородская обл Городецкий р-н )</option>
+<option value="00998">Заинск ( Татарстан Респ Заинский р-н )</option>
+<option value="231">Заречный ( Свердловская обл )</option>
+<option value="04679">Заречный ( Пензенская обл )</option>
+<option value="04456">Заринск ( Алтайский край )</option>
+<option value="Н01022399">Заславль ( Минская )</option>
+<option value="04606">Звенигород ( Московская обл )</option>
+<option value="04820">Зеленогорск ( Санкт-Петербург )</option>
+<option value="04468">Зеленогорск ( Красноярский край )</option>
+<option value="153">Зеленоград ( Москва )</option>
+<option value="00999">Зеленодольск ( Татарстан Респ Зеленодольский р-н )</option>
+<option value="01909">Зеленокумск ( Ставропольский край Советский р-н )</option>
+<option value="167">Златоуст ( Челябинская обл )</option>
+<option value="Н00160708">Знамя Октября ( Москва  Рязановское п )</option>
+<option value="03284">Ивангород ( Ленинградская обл Кингисеппский р-н )</option>
+<option value="17">Иваново ( Ивановская обл )</option>
+<option value="Н01010211">Иваново ( Брестская )</option>
+<option value="04607">Ивантеевка ( Московская обл )</option>
+<option value="Н00195832">Ивацевичи ( Брестская )</option>
+<option value="Н01011024">Ивье ( Гродненская )</option>
+<option value="Н00019816">Игра ( Удмуртская Респ Игринский р-н )</option>
+<option value="Н00705557">Иджеван ( Тавушская )</option>
+<option value="18">Ижевск ( Удмуртская Респ )</option>
+<option value="04393">Избербаш ( Дагестан Респ )</option>
+<option value="01903">Изобильный ( Ставропольский край Изобильненский р-н )</option>
+<option value="04415">Инта ( Коми Респ )</option>
+<option value="01904">Ипатово ( Ставропольский край Ипатовский р-н )</option>
+<option value="19">Иркутск ( Иркутская обл )</option>
+<option value="03345">Истра ( Московская обл )</option>
+<option value="Н00150843">Ишеевка ( Ульяновская обл Ульяновский р-н )</option>
+<option value="188">Ишим ( Тюменская обл )</option>
+<option value="00404">Ишимбай ( Башкортостан Респ Ишимбайский р-н )</option>
+<option value="20">Йошкар-Ола ( Марий Эл Респ )</option>
+<option value="Н00047983">Кадуй ( Вологодская обл Кадуйский р-н )</option>
+<option value="90">Казань ( Татарстан Респ )</option>
+<option value="155">Калининград ( Калининградская обл )</option>
+<option value="03977">Калининск ( Саратовская обл Калининский р-н )</option>
+<option value="Н00195821">Калинковичи ( Гомельская )</option>
+<option value="21">Калуга ( Калужская обл )</option>
+<option value="Н00078588">Кальтино ( Ленинградская обл Всеволожский р-н )</option>
+<option value="Н01010250">Каменец ( Брестская )</option>
+<option value="03565">Каменка ( Пензенская обл Каменский р-н )</option>
+<option value="22">Каменск-Уральский ( Свердловская обл )</option>
+<option value="04701">Каменск-Шахтинский ( Ростовская обл )</option>
+<option value="04452">Камень-на-Оби ( Алтайский край )</option>
+<option value="211">Камышин ( Волгоградская обл )</option>
+<option value="04635">Кандалакша ( Мурманская обл Кандалакшский р-н )</option>
+<option value="Н00026143">Каневская ( Краснодарский край Каневской р-н )</option>
+<option value="195">Канск ( Красноярский край )</option>
+<option value="Н00708463">Кант ( Чуйская )</option>
+<option value="Н00704687">Капан ( Сюникская )</option>
+<option value="Н00693494">Кара-Балта ( Чуйская )</option>
+<option value="02200">Карабаново ( Владимирская обл Александровский р-н )</option>
+<option value="Н00192456">Караганда ( Карагандинская )</option>
+<option value="Н00693142">Каракол ( Иссык-Кульская область )</option>
+<option value="254">Карпинск ( Свердловская обл )</option>
+<option value="04394">Каспийск ( Дагестан Респ )</option>
+<option value="04744">Качканар ( Свердловская обл )</option>
+<option value="23">Кемерово ( Кемеровская область - Кузбасс обл )</option>
+<option value="22007">Керчь ( Крым Респ )</option>
+<option value="04398">Кизляр ( Дагестан Респ )</option>
+<option value="04311">Кимовск ( Тульская обл Кимовский р-н )</option>
+<option value="04782">Кимры ( Тверская обл )</option>
+<option value="03283">Кингисепп ( Ленинградская обл Кингисеппский р-н )</option>
+<option value="04720">Кинель ( Самарская обл )</option>
+<option value="Н00123920">Кинель-Черкассы ( Самарская обл Кинель-Черкасский р-н )</option>
+<option value="230">Кинешма ( Ивановская обл Кинешемский р-н )</option>
+<option value="04312">Киреевск ( Тульская обл Киреевский р-н )</option>
+<option value="02248">Киржач ( Владимирская обл Киржачский р-н )</option>
+<option value="03295">Кириши ( Ленинградская обл Киришский р-н )</option>
+<option value="24">Киров ( Кировская обл )</option>
+<option value="11980">Киров ( Калужская обл Кировский р-н )</option>
+<option value="238">Кирово-Чепецк ( Кировская обл Кирово-Чепецкий р-н )</option>
+<option value="03299">Кировск ( Ленинградская обл Кировский р-н )</option>
+<option value="04774">Кирсанов ( Тамбовская обл )</option>
+<option value="213">Киселевск ( Кемеровская область - Кузбасс обл )</option>
+<option value="Н00144825">Кисловка ( Томская обл Томский р-н )</option>
+<option value="171">Кисловодск ( Ставропольский край )</option>
+<option value="Н01013759">Клецк ( Минская )</option>
+<option value="Н01002696">Климовичи ( Могилевская )</option>
+<option value="245">Климовск ( Московская обл )</option>
+<option value="100">Клин ( Московская обл )</option>
+<option value="04529">Клинцы ( Брянская обл )</option>
+<option value="Н01002694">Кличев ( Могилевская )</option>
+<option value="Н00195817">Кобрин ( Брестская )</option>
+<option value="04534">Ковров ( Владимирская обл )</option>
+<option value="101">Когалым ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="Н00160540">Кокошкино ( Москва  Кокошкино п )</option>
+<option value="Н00163811">Кокшетау ( Акмолинская )</option>
+<option value="03399">Кола ( Мурманская обл Кольский р-н )</option>
+<option value="Н01014560">Колодищи ( Минская )</option>
+<option value="102">Коломна ( Московская обл )</option>
+<option value="168">Колпино ( Санкт-Петербург )</option>
+<option value="16014">Кольцово ( Новосибирская обл )</option>
+<option value="02260">Кольчугино ( Владимирская обл Кольчугинский р-н )</option>
+<option value="03272">Коммунар ( Ленинградская обл Гатчинский р-н )</option>
+<option value="Н00160724">Коммунарка ( Москва  Сосенское п )</option>
+<option value="91">Комсомольск-на-Амуре ( Хабаровский край )</option>
+<option value="04286">Конаково ( Тверская обл Конаковский р-н )</option>
+<option value="00944">Кондопога ( Карелия Респ Кондопожский р-н )</option>
+<option value="264">Копейск ( Челябинская обл )</option>
+<option value="Н01015391">Копыль ( Минская )</option>
+<option value="Н01023072">Кореличи ( Гродненская )</option>
+<option value="01421">Кореновск ( Краснодарский край Кореновский р-н )</option>
+<option value="186">Коркино ( Челябинская обл Коркинский р-н )</option>
+<option value="04609">Королёв ( Московская обл )</option>
+<option value="01931">Короча ( Белгородская обл Корочанский р-н )</option>
+<option value="04200">Корсаков ( Сахалинская обл Корсаковский р-н )</option>
+<option value="Н00163812">Костанай ( Костанайская )</option>
+<option value="04410">Костомукша ( Карелия Респ )</option>
+<option value="133">Кострома ( Костромская обл )</option>
+<option value="Н01016705">Костюковичи ( Могилевская )</option>
+<option value="04629">Котельники ( Московская обл )</option>
+<option value="01917">Котлас ( Архангельская обл Котласский р-н )</option>
+<option value="04771">Котовск ( Тамбовская обл )</option>
+<option value="03357">Красково ( Московская обл Люберецкий р-н )</option>
+<option value="Н00160547">Красная Пахра ( Москва  Краснопахорское п )</option>
+<option value="Н00134489">Красненькая ( Тамбовская обл Тамбовский р-н )</option>
+<option value="04610">Красноармейск ( Московская обл )</option>
+<option value="03353">Красногорск ( Московская обл )</option>
+<option value="25">Краснодар ( Краснодарский край )</option>
+<option value="04822">Красное Село ( Санкт-Петербург )</option>
+<option value="04611">Краснознаменск ( Московская обл )</option>
+<option value="04345">Краснокаменск ( Забайкальский край Краснокаменский р-н )</option>
+<option value="03779">Краснокамск ( Пермский край Краснокамский р-н )</option>
+<option value="Н00096561">Краснообск ( Новосибирская обл Новосибирский р-н )</option>
+<option value="147">Краснотурьинск ( Свердловская обл )</option>
+<option value="04747">Красноуральск ( Свердловская обл )</option>
+<option value="26">Красноярск ( Красноярский край )</option>
+<option value="Н00191670">Красный Посёлок ( Московская обл )</option>
+<option value="Н00124209">Красный Яр ( Самарская обл Красноярский р-н )</option>
+<option value="Н00195829">Кричев ( Могилевская )</option>
+<option value="04823">Кронштадт ( Санкт-Петербург )</option>
+<option value="202">Кропоткин ( Краснодарский край Кавказский р-н )</option>
+<option value="Н01023055">Круглое ( Могилевская )</option>
+<option value="Н01017518">Крупки ( Минская )</option>
+<option value="01422">Крымск ( Краснодарский край Крымский р-н )</option>
+<option value="165">Кстово ( Нижегородская обл Кстовский р-н )</option>
+<option value="03372">Кубинка ( Московская обл Одинцовский р-н )</option>
+<option value="Н00078610">Кудрово ( Ленинградская обл Всеволожский р-н )</option>
+<option value="03594">Кузнецк ( Пензенская обл )</option>
+<option value="Н00016625">Кукмор ( Татарстан Респ Кукморский р-н )</option>
+<option value="206">Кумертау ( Башкортостан Респ )</option>
+<option value="27">Курган ( Курганская обл )</option>
+<option value="01423">Курганинск ( Краснодарский край Курганинский р-н )</option>
+<option value="02226">Курлово ( Владимирская обл Гусь-Хрустальный р-н )</option>
+<option value="03375">Куровское ( Московская обл Орехово-Зуевский р-н )</option>
+<option value="28">Курск ( Курская обл )</option>
+<option value="02945">Курчатов ( Курская обл )</option>
+<option value="04748">Кушва ( Свердловская обл )</option>
+<option value="Н00026441">Кущевская ( Краснодарский край Кущевский р-н )</option>
+<option value="04429">Кызыл ( Тыва Респ )</option>
+<option value="Н00163813">Кызылорда ( Кызылординская )</option>
+<option value="04801">Кыштым ( Челябинская обл )</option>
+<option value="01424">Лабинск ( Краснодарский край Лабинский р-н )</option>
+<option value="04848">Лабытнанги ( Ямало-Ненецкий АО )</option>
+<option value="03334">Лебедянь ( Липецкая обл Лебедянский р-н )</option>
+<option value="Н01020170">Лельчицы ( Гомельская )</option>
+<option value="Н00026565">Ленинградская ( Краснодарский край Ленинградский р-н )</option>
+<option value="223">Лениногорск ( Татарстан Респ Лениногорский р-н )</option>
+<option value="200">Ленинск-Кузнецкий ( Кемеровская область - Кузбасс обл )</option>
+<option value="Н01020306">Лепель ( Витебская )</option>
+<option value="Н01019617">Лесной ( Минская )</option>
+<option value="103">Лесной ( Свердловская обл )</option>
+<option value="Н00085313">Лесной Городок ( Московская обл Одинцовский р-н )</option>
+<option value="04492">Лесозаводск ( Приморский край )</option>
+<option value="04469">Лесосибирск ( Красноярский край )</option>
+<option value="04676">Ливны ( Орловская обл )</option>
+<option value="Н00195805">Лида ( Гродненская )</option>
+<option value="Н00160423">Ликова ( Москва  Внуковское п )</option>
+<option value="29">Липецк ( Липецкая обл )</option>
+<option value="228">Лиски ( Воронежская обл Лискинский р-н )</option>
+<option value="04289">Лихославль ( Тверская обл Лихославльский р-н )</option>
+<option value="04612">Лобня ( Московская обл )</option>
+<option value="Н01020458">Логойск ( Минская )</option>
+<option value="03322">Лодейное Поле ( Ленинградская обл Лодейнопольский р-н )</option>
+<option value="Н01023067">Лоев ( Гомельская )</option>
+<option value="Н00083846">Лопатино ( Московская обл Ленинский р-н )</option>
+<option value="04628">Лосино-Петровский ( Московская обл )</option>
+<option value="03323">Луга ( Ленинградская обл Лужский р-н )</option>
+<option value="Н00195801">Лунинец ( Брестская )</option>
+<option value="226">Лысьва ( Пермский край )</option>
+<option value="04613">Лыткарино ( Московская обл )</option>
+<option value="Н01021256">Любань ( Минская )</option>
+<option value="263">Люберцы ( Московская обл )</option>
+<option value="02435">Людиново ( Калужская обл Людиновский р-н )</option>
+<option value="04367">Лянтор ( Ханты-Мансийский Автономный округ - Югра АО Сургутский р-н )</option>
+<option value="Н01008801">Ляховичи ( Брестская )</option>
+<option value="246">Магадан ( Магаданская обл )</option>
+<option value="30">Магнитогорск ( Челябинская обл )</option>
+<option value="173">Майкоп ( Адыгея Респ )</option>
+<option value="Н00006289">Майма ( Алтай Респ Майминский р-н )</option>
+<option value="Н01008883">Малорита ( Брестская )</option>
+<option value="02436">Малоярославец ( Калужская обл Малоярославецкий р-н )</option>
+<option value="04728">Маркс ( Саратовская обл )</option>
+<option value="Н00704310">Мартуни ( Гехаркуникская )</option>
+<option value="Н00195833">Марьина Горка ( Минская )</option>
+<option value="Н00704933">Масис ( Араратская )</option>
+<option value="201">Махачкала ( Дагестан Респ )</option>
+<option value="04834">Мегион ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="Н00704741">Мегри ( Сюникская )</option>
+<option value="Н00011546">Медведево ( Марий Эл Респ Медведевский р-н )</option>
+<option value="215">Междуреченск ( Кемеровская область - Кузбасс обл )</option>
+<option value="216">Мелеуз ( Башкортостан Респ Мелеузовский р-н )</option>
+<option value="02254">Мелехово ( Владимирская обл Ковровский р-н )</option>
+<option value="21800">Металлострой ( Санкт-Петербург )</option>
+<option value="31">Миасс ( Челябинская обл )</option>
+<option value="Н01009044">Микашевичи ( Брестская )</option>
+<option value="03798">Миллерово ( Ростовская обл Миллеровский р-н )</option>
+<option value="04501">Минеральные Воды ( Ставропольский край Минераловодский р-н )</option>
+<option value="Н00163822">Минск ( Минская )</option>
+<option value="196">Минусинск ( Красноярский край )</option>
+<option value="Н01014310">Миоры ( Витебская )</option>
+<option value="Н00162566">Мирное ( Крым Респ Симферопольский р-н )</option>
+<option value="00979">Мирный ( Саха /Якутия/ Респ Мирнинский у )</option>
+<option value="04517">Мирный ( Архангельская обл )</option>
+<option value="14753">Мисайлово ( Московская обл Ленинский р-н )</option>
+<option value="04539">Михайловка ( Волгоградская обл )</option>
+<option value="01910">Михайловск ( Ставропольский край Шпаковский р-н )</option>
+<option value="Н01012502">Михановичи ( Минская )</option>
+<option value="Н00087483">Михнево ( Московская обл )</option>
+<option value="169">Мичуринск ( Тамбовская обл )</option>
+<option value="Н00163828">Могилев ( Могилевская )</option>
+<option value="03361">Можайск ( Московская обл )</option>
+<option value="04435">Можга ( Удмуртская Респ )</option>
+<option value="00988">Моздок ( Северная Осетия - Алания Респ Моздокский р-н )</option>
+<option value="Н00195803">Мозырь ( Гомельская )</option>
+<option value="Н00195802">Молодечно ( Минская )</option>
+<option value="Н00088413">Молочный ( Мурманская обл Кольский р-н )</option>
+<option value="Н00088330">Монино ( Московская обл Щелковский р-н )</option>
+<option value="04637">Мончегорск ( Мурманская обл )</option>
+<option value="04772">Моршанск ( Тамбовская обл )</option>
+<option value="68">Москва</option>
+<option value="04364">Московский ( Москва  Московский п )</option>
+<option value="Н00195818">Мстиславль ( Могилевская )</option>
+<option value="04849">Муравленко ( Ямало-Ненецкий АО )</option>
+<option value="Н00078637">Мурино ( Ленинградская обл Всеволожский р-н )</option>
+<option value="69">Мурманск ( Мурманская обл )</option>
+<option value="04535">Муром ( Владимирская обл )</option>
+<option value="04677">Мценск ( Орловская обл )</option>
+<option value="04579">Мыски ( Кемеровская область - Кузбасс обл )</option>
+<option value="149">Мытищи ( Московская обл )</option>
+<option value="Н01013557">Мядель ( Минская )</option>
+<option value="105">Набережные Челны ( Татарстан Респ )</option>
+<option value="03421">Навашино ( Нижегородская обл Навашинский р-н )</option>
+<option value="04850">Надым ( Ямало-Ненецкий АО )</option>
+<option value="04403">Назрань ( Ингушетия Респ )</option>
+<option value="221">Нальчик ( Кабардино-Балкарская Респ )</option>
+<option value="03363">Наро-Фоминск ( Московская обл )</option>
+<option value="Н01023070">Наровля ( Гомельская )</option>
+<option value="Н00693244">Нарын ( Нарынская область )</option>
+<option value="Н00103912">Нарышкино ( Орловская обл Урицкий р-н )</option>
+<option value="04830">Нарьян-Мар ( Ненецкий АО )</option>
+<option value="Н00083801">Нахабино ( Московская обл )</option>
+<option value="236">Находка ( Приморский край )</option>
+<option value="163">Невинномысск ( Ставропольский край )</option>
+<option value="04425">Нерюнгри ( Саха /Якутия/ Респ )</option>
+<option value="Н01014247">Несвиж ( Минская )</option>
+<option value="138">Нефтекамск ( Башкортостан Респ )</option>
+<option value="04842">Нефтеюганск ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="32">Нижневартовск ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="198">Нижнекамск ( Татарстан Респ Нижнекамский р-н )</option>
+<option value="33">Нижний Новгород ( Нижегородская обл )</option>
+<option value="34">Нижний Тагил ( Свердловская обл )</option>
+<option value="184">Нижняя Тура ( Свердловская обл )</option>
+<option value="03687">Никольск ( Пензенская обл Никольский р-н )</option>
+<option value="03329">Никольское ( Ленинградская обл Тосненский р-н )</option>
+<option value="204">Новоалтайск ( Алтайский край )</option>
+<option value="Н01002688">Новогорелово ( Ленинградская обл Ломоносовский р-н )</option>
+<option value="Н00195822">Новогрудок ( Гродненская )</option>
+<option value="04518">Новодвинск ( Архангельская обл )</option>
+<option value="Н00078643">Новое Девяткино ( Ленинградская обл Всеволожский р-н )</option>
+<option value="04530">Новозыбков ( Брянская обл )</option>
+<option value="66">Новокузнецк ( Кемеровская область - Кузбасс обл )</option>
+<option value="190">Новокуйбышевск ( Самарская обл )</option>
+<option value="Н01002695">Новолукомль ( Витебская )</option>
+<option value="Н00027174">Новомихайловский ( Краснодарский край Туапсинский р-н )</option>
+<option value="03807">Новомичуринск ( Рязанская обл Пронский р-н )</option>
+<option value="242">Новомосковск ( Тульская обл Новомосковский р-н )</option>
+<option value="Н00195813">Новополоцк ( Витебская )</option>
+<option value="35">Новороссийск ( Краснодарский край )</option>
+<option value="Н00129605">Новосельцы (Козинское с/пос) ( Смоленская обл Смоленский р-н )</option>
+<option value="37">Новосибирск ( Новосибирская обл )</option>
+<option value="04668">Новотроицк ( Оренбургская обл )</option>
+<option value="106">Новоуральск ( Свердловская обл )</option>
+<option value="249">Новочебоксарск ( Чувашская Республика Чувашия )</option>
+<option value="177">Новочеркасск ( Ростовская обл )</option>
+<option value="04703">Новошахтинск ( Ростовская обл )</option>
+<option value="04851">Новый Уренгой ( Ямало-Ненецкий АО )</option>
+<option value="03366">Ногинск ( Московская обл )</option>
+<option value="Н01023057">Нойемберян ( Тавушская )</option>
+<option value="265">Норильск ( Красноярский край )</option>
+<option value="107">Ноябрьск ( Ямало-Ненецкий АО )</option>
+<option value="Н00192454">Нур-Султан ( Акмолинская )</option>
+<option value="108">Нягань ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="01920">Няндома ( Архангельская обл Няндомский р-н )</option>
+<option value="210">Обнинск ( Калужская обл )</option>
+<option value="04660">Обь ( Новосибирская обл )</option>
+<option value="243">Одинцово ( Московская обл Одинцовский р-н )</option>
+<option value="110">Озерск ( Челябинская обл )</option>
+<option value="03359">Октябрьский ( Московская обл Люберецкий р-н )</option>
+<option value="145">Октябрьский ( Башкортостан Респ )</option>
+<option value="38">Омск ( Омская обл )</option>
+<option value="39">Орёл ( Орловская обл )</option>
+<option value="40">Оренбург ( Оренбургская обл )</option>
+<option value="04623">Орехово-Зуево ( Московская обл )</option>
+<option value="111">Орск ( Оренбургская обл )</option>
+<option value="Н00195806">Орша ( Витебская )</option>
+<option value="04580">Осинники ( Кемеровская область - Кузбасс обл )</option>
+<option value="Н00195811">Осиповичи ( Могилевская )</option>
+<option value="Н00195834">Островец ( Гродненская )</option>
+<option value="02363">Острогожск ( Воронежская обл Острогожский р-н )</option>
+<option value="03300">Отрадное ( Ленинградская обл Кировский р-н )</option>
+<option value="Н00052558">Отрадное ( Воронежская обл Новоусманский р-н )</option>
+<option value="04715">Отрадный ( Самарская обл )</option>
+<option value="Н00708464">Ош ( Ошская область )</option>
+<option value="Н01023064">Ошмяны ( Гродненская )</option>
+<option value="260">Павлово ( Нижегородская обл Павловский р-н )</option>
+<option value="04856">Павловская Слобода ( Московская обл Истринский р-н )</option>
+<option value="03377">Павловский Посад ( Московская обл )</option>
+<option value="Н00163814">Павлодар ( Павлодарская )</option>
+<option value="112">Пенза ( Пензенская обл )</option>
+<option value="142">Первоуральск ( Свердловская обл )</option>
+<option value="03383">Пересвет ( Московская обл Сергиево-Посадский р-н )</option>
+<option value="04816">Переславль-Залесский ( Ярославская обл )</option>
+<option value="41">Пермь ( Пермский край )</option>
+<option value="21803">Песочный ( Санкт-Петербург )</option>
+<option value="Н00120184">Песчанокопское ( Ростовская обл Песчанокопский р-н )</option>
+<option value="04826">Петергоф ( Санкт-Петербург )</option>
+<option value="Н01018960">Петриков ( Гомельская )</option>
+<option value="04729">Петровск ( Саратовская обл )</option>
+<option value="Н00147430">Петровский ( Тульская обл Ленинский р-н )</option>
+<option value="42">Петрозаводск ( Карелия Респ )</option>
+<option value="04863">Петропавловск ( Северо-Казахстанская обл )</option>
+<option value="114">Петропавловск-Камчатский ( Камчатский край )</option>
+<option value="02278">Петушки ( Владимирская обл Петушинский р-н )</option>
+<option value="04416">Печора ( Коми Респ )</option>
+<option value="Н00195809">Пинск ( Брестская )</option>
+<option value="Н00035008">Плесецк ( Архангельская обл Плесецкий р-н )</option>
+<option value="158">Подольск ( Московская обл )</option>
+<option value="Н00161080">Пойковский ( Ханты-Мансийский Автономный округ - Югра АО Нефтеюганский р-н )</option>
+<option value="253">Полевской ( Свердловская обл )</option>
+<option value="Н00195800">Полоцк ( Витебская )</option>
+<option value="Н01011790">Поставы ( Витебская )</option>
+<option value="Н00126849">Приволжский ( Саратовская обл Энгельсский р-н )</option>
+<option value="Н00124865">Придорожный ( Самарская обл Волжский р-н )</option>
+<option value="01426">Приморско-Ахтарск ( Краснодарский край Приморско-Ахтарский р-н )</option>
+<option value="03325">Приозерск ( Ленинградская обл Приозерский р-н )</option>
+<option value="214">Прокопьевск ( Кемеровская область - Кузбасс обл )</option>
+<option value="03800">Пролетарск ( Ростовская обл Пролетарский р-н )</option>
+<option value="04614">Протвино ( Московская обл )</option>
+<option value="00933">Прохладный ( Кабардино-Балкарская Респ )</option>
+<option value="Н00127915">Прохладный ( Свердловская обл Белоярский р-н )</option>
+<option value="Н01009864">Пружаны ( Брестская )</option>
+<option value="139">Псков ( Псковская обл )</option>
+<option value="04730">Пугачев ( Саратовская обл )</option>
+<option value="Н00083808">Путилково ( Московская обл )</option>
+<option value="04827">Пушкин ( Санкт-Петербург )</option>
+<option value="03378">Пушкино ( Московская обл Пушкинский р-н )</option>
+<option value="04615">Пущино ( Московская обл )</option>
+<option value="43">Пятигорск ( Ставропольский край )</option>
+<option value="04843">Радужный ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="04532">Радужный ( Владимирская обл )</option>
+<option value="Н00083853">Развилка ( Московская обл Ленинский р-н )</option>
+<option value="Н00705138">Раздан ( Котайкская )</option>
+<option value="Н00038228">Разумное ( Белгородская обл Белгородский р-н )</option>
+<option value="Н01011007">Раков ( Минская )</option>
+<option value="03379">Раменское ( Московская обл Раменский р-н )</option>
+<option value="04776">Рассказово ( Тамбовская обл )</option>
+<option value="Н01011240">Ратомка ( Минская )</option>
+<option value="159">Ревда ( Свердловская обл )</option>
+<option value="04220">Реж ( Свердловская обл Режевской р-н )</option>
+<option value="143">Реутов ( Московская обл )</option>
+<option value="Н00195823">Речица ( Гомельская )</option>
+<option value="04780">Ржев ( Тверская обл )</option>
+<option value="Н00195825">Рогачев ( Гомельская )</option>
+<option value="02380">Родники ( Ивановская обл Родниковский р-н )</option>
+<option value="04235">Рославль ( Смоленская обл Рославльский р-н )</option>
+<option value="02366">Россошь ( Воронежская обл Россошанский р-н )</option>
+<option value="04360">Ростов ( Ярославская обл Ростовский р-н )</option>
+<option value="44">Ростов-на-Дону ( Ростовская обл )</option>
+<option value="Н00078714">Рощино ( Ленинградская обл Выборгский р-н )</option>
+<option value="Н00124870">Рощинский ( Самарская обл Волжский р-н )</option>
+<option value="04731">Ртищево ( Саратовская обл )</option>
+<option value="04454">Рубцовск ( Алтайский край )</option>
+<option value="00972">Рузаевка ( Мордовия Респ )</option>
+<option value="175">Рыбинск ( Ярославская обл Рыбинский р-н )</option>
+<option value="45">Рязань ( Рязанская обл )</option>
+<option value="22012">Саки ( Крым Респ )</option>
+<option value="115">Салават ( Башкортостан Респ )</option>
+<option value="229">Салехард ( Ямало-Ненецкий АО )</option>
+<option value="03801">Сальск ( Ростовская обл Сальский р-н )</option>
+<option value="46">Самара ( Самарская обл )</option>
+<option value="116">Санкт-Петербург</option>
+<option value="Н00083855">Сапроново ( Московская обл Ленинский р-н )</option>
+<option value="117">Саранск ( Мордовия Респ )</option>
+<option value="218">Сарапул ( Удмуртская Респ )</option>
+<option value="47">Саратов ( Саратовская обл )</option>
+<option value="209">Саров ( Нижегородская обл )</option>
+<option value="04708">Сасово ( Рязанская обл )</option>
+<option value="04237">Сафоново ( Смоленская обл Сафоновский р-н )</option>
+<option value="04437">Саяногорск ( Хакасия Респ )</option>
+<option value="Н01002691">Светлогорск ( Гомельская )</option>
+<option value="01908">Светлоград ( Ставропольский край Петровский р-н )</option>
+<option value="Н00124928">Светлый ( Саратовская обл )</option>
+<option value="03270">Светогорск ( Ленинградская обл Выборгский р-н )</option>
+<option value="Н00195819">Свислочь ( Гродненская )</option>
+<option value="04512">Свободный ( Амурская обл )</option>
+<option value="203">Севастополь</option>
+<option value="181">Северодвинск ( Архангельская обл )</option>
+<option value="04642">Североморск ( Мурманская обл )</option>
+<option value="255">Североуральск ( Свердловская обл )</option>
+<option value="239">Северск ( Томская обл )</option>
+<option value="Н00026840">Северская ( Краснодарский край Северский р-н )</option>
+<option value="Н00085071">Селятино ( Московская обл )</option>
+<option value="Н00163815">Семей ( Восточно-Казахстанская )</option>
+<option value="02367">Семилуки ( Воронежская обл Семилукский р-н )</option>
+<option value="Н01018255">Сенно ( Витебская )</option>
+<option value="03384">Сергиев Посад ( Московская обл Сергиево-Посадский р-н )</option>
+<option value="48">Серов ( Свердловская обл )</option>
+<option value="04625">Серпухов ( Московская обл )</option>
+<option value="03166">Сертолово ( Ленинградская обл Всеволожский р-н )</option>
+<option value="04828">Сестрорецк ( Санкт-Петербург )</option>
+<option value="04379">Сибай ( Башкортостан Респ )</option>
+<option value="Н00079074">Сиверский ( Ленинградская обл Гатчинский р-н )</option>
+<option value="150">Симферополь ( Крым Респ )</option>
+<option value="Н00704801">Сисиан ( Сюникская )</option>
+<option value="Н00195820">Скидель ( Гродненская )</option>
+<option value="Н01023071">Славгород ( Могилевская )</option>
+<option value="04455">Славгород ( Алтайский край )</option>
+<option value="01427">Славянск-на-Кубани ( Краснодарский край Славянский р-н )</option>
+<option value="03326">Сланцы ( Ленинградская обл Сланцевский р-н )</option>
+<option value="02723">Слободской ( Кировская обл Слободской р-н )</option>
+<option value="Н00195814">Слоним ( Гродненская )</option>
+<option value="Н00195815">Слуцк ( Минская )</option>
+<option value="Н01015677">Смиловичи ( Минская )</option>
+<option value="Н01015702">Смолевичи ( Минская )</option>
+<option value="49">Смоленск ( Смоленская обл )</option>
+<option value="Н00195810">Сморгонь ( Гродненская )</option>
+<option value="Н00124872">Смышляевка ( Самарская обл Волжский р-н )</option>
+<option value="118">Снежинск ( Челябинская обл )</option>
+<option value="04507">Советская Гавань ( Хабаровский край )</option>
+<option value="119">Советский ( Ханты-Мансийский Автономный округ - Югра АО Советский р-н )</option>
+<option value="02351">Сокол ( Вологодская обл Сокольский р-н )</option>
+<option value="Н00693545">Сокулук ( Чуйская )</option>
+<option value="Н00195807">Солигорск ( Минская )</option>
+<option value="04689">Соликамск ( Пермский край )</option>
+<option value="03385">Солнечногорск ( Московская обл Солнечногорский р-н )</option>
+<option value="03467">Соль-Илецк ( Оренбургская обл Соль-Илецкий р-н )</option>
+<option value="04674">Сорочинск ( Оренбургская обл )</option>
+<option value="04471">Сосновоборск ( Красноярский край )</option>
+<option value="04597">Сосновый Бор ( Ленинградская обл )</option>
+<option value="191">Сочи ( Краснодарский край )</option>
+<option value="Н00703402">Спитак ( Лорийская )</option>
+<option value="50">Ставрополь ( Ставропольский край )</option>
+<option value="03369">Старая Купавна ( Московская обл Ногинский р-н )</option>
+<option value="Н00027277">Старощербиновская ( Краснодарский край Щербиновский р-н )</option>
+<option value="Н00195826">Старые Дороги ( Минская )</option>
+<option value="161">Старый Оскол ( Белгородская обл )</option>
+<option value="Н00703406">Степанаван ( Лорийская )</option>
+<option value="157">Стерлитамак ( Башкортостан Респ )</option>
+<option value="Н01002699">Столбцы ( Минская )</option>
+<option value="Н01010342">Столин ( Брестская )</option>
+<option value="256">Стрежевой ( Томская обл )</option>
+<option value="01934">Строитель ( Белгородская обл Яковлевский р-н )</option>
+<option value="Н00134523">Строитель ( Тамбовская обл Тамбовский р-н )</option>
+<option value="Н00124875">Стройкерамика ( Самарская обл Волжский р-н )</option>
+<option value="02201">Струнино ( Владимирская обл Александровский р-н )</option>
+<option value="03390">Ступино ( Московская обл Ступинский р-н )</option>
+<option value="02320">Суздаль ( Владимирская обл Суздальский р-н )</option>
+<option value="51">Сургут ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="04221">Сухой Лог ( Свердловская обл Сухоложский р-н )</option>
+<option value="120">Сызрань ( Самарская обл )</option>
+<option value="52">Сыктывкар ( Коми Респ )</option>
+<option value="154">Сысерть ( Свердловская обл Сысертский р-н )</option>
+<option value="53">Таганрог ( Ростовская обл )</option>
+<option value="Н00163816">Талдыкорган ( Алматинская )</option>
+<option value="Н00704189">Талин ( Арагацотнская )</option>
+<option value="54">Тамбов ( Тамбовская обл )</option>
+<option value="Н00163817">Тараз ( Жамбыльская )</option>
+<option value="Н00126621">Татищево ( Саратовская обл Татищевский р-н )</option>
+<option value="Н00703410">Ташир ( Лорийская )</option>
+<option value="02453">Таштагол ( Кемеровская область - Кузбасс обл Таштагольский р-н )</option>
+<option value="55">Тверь ( Тверская обл )</option>
+<option value="Н00080436">Тельмана ( Ленинградская обл Тосненский р-н )</option>
+<option value="01428">Темрюк ( Краснодарский край Темрюкский р-н )</option>
+<option value="01429">Тимашевск ( Краснодарский край Тимашевский р-н )</option>
+<option value="03327">Тихвин ( Ленинградская обл Тихвинский р-н )</option>
+<option value="01430">Тихорецк ( Краснодарский край Тихорецкий р-н )</option>
+<option value="121">Тобольск ( Тюменская обл )</option>
+<option value="Н00693560">Токмок ( Чуйская )</option>
+<option value="Н01012017">Толочин ( Витебская )</option>
+<option value="56">Тольятти ( Самарская обл )</option>
+<option value="03360">Томилино ( Московская обл Люберецкий р-н )</option>
+<option value="57">Томск ( Томская обл )</option>
+<option value="04779">Торжок ( Тверская обл )</option>
+<option value="03328">Тосно ( Ленинградская обл Тосненский р-н )</option>
+<option value="04806">Трехгорный ( Челябинская обл )</option>
+<option value="251">Троицк ( Челябинская обл )</option>
+<option value="04819">Троицк ( Москва )</option>
+<option value="01431">Туапсе ( Краснодарский край Туапсинский р-н )</option>
+<option value="217">Туймазы ( Башкортостан Респ Туймазинский р-н )</option>
+<option value="122">Тула ( Тульская обл )</option>
+<option value="04362">Тутаев ( Ярославская обл Тутаевский р-н )</option>
+<option value="Н00086354">Тучково ( Московская обл )</option>
+<option value="04513">Тында ( Амурская обл )</option>
+<option value="67">Тюмень ( Тюменская обл )</option>
+<option value="04777">Уварово ( Тамбовская обл )</option>
+<option value="Н00086125">Удельная ( Московская обл Раменский р-н )</option>
+<option value="04303">Удомля ( Тверская обл )</option>
+<option value="Н01020392">Узда ( Минская )</option>
+<option value="04319">Узловая ( Тульская обл Узловский р-н )</option>
+<option value="59">Улан-Удэ ( Бурятия Респ )</option>
+<option value="Н01023076">Улуковский с/с ( Гомельская )</option>
+<option value="124">Ульяновск ( Ульяновская обл )</option>
+<option value="04838">Урай ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="Н00163821">Уральск ( Западно-Казахстанская )</option>
+<option value="04418">Усинск ( Коми Респ )</option>
+<option value="03335">Усмань ( Липецкая обл Усманский р-н )</option>
+<option value="04558">Усолье-Сибирское ( Иркутская обл )</option>
+<option value="235">Уссурийск ( Приморский край )</option>
+<option value="04559">Усть-Илимск ( Иркутская обл )</option>
+<option value="Н00163818">Усть-Каменогорск ( Восточно-Казахстанская )</option>
+<option value="01432">Усть-Лабинск ( Краснодарский край Усть-Лабинский р-н )</option>
+<option value="60">Уфа ( Башкортостан Респ )</option>
+<option value="126">Ухта ( Коми Респ )</option>
+<option value="Н01020915">Фаниполь ( Минская )</option>
+<option value="03074">Фатеж ( Курская обл Фатежский р-н )</option>
+<option value="Н00080439">Федоровское ( Ленинградская обл Тосненский р-н )</option>
+<option value="22073">Феодосия ( Крым Респ )</option>
+<option value="01986">Фокино ( Брянская обл )</option>
+<option value="152">Фрязино ( Московская обл )</option>
+<option value="61">Хабаровск ( Хабаровский край )</option>
+<option value="127">Ханты-Мансийск ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="04399">Хасавюрт ( Дагестан Респ )</option>
+<option value="144">Химки ( Московская обл )</option>
+<option value="Н01010648">Хойники ( Гомельская )</option>
+<option value="Н00025686">Холмская ( Краснодарский край Абинский р-н )</option>
+<option value="Н01015422">Хотимск ( Могилевская )</option>
+<option value="03382">Хотьково ( Московская обл Сергиево-Посадский р-н )</option>
+<option value="Н01023058">Цахкаовит ( Арагацотнская )</option>
+<option value="Н00120534">Целина ( Ростовская обл Целинский р-н )</option>
+<option value="244">Чайковский ( Пермский край )</option>
+<option value="Н00119859">Чалтырь ( Ростовская обл Мясниковский р-н )</option>
+<option value="Н00704403">Чамбарак ( Гехаркуникская )</option>
+<option value="233">Чапаевск ( Самарская обл )</option>
+<option value="Н00705158">Чаренцаван ( Котайкская )</option>
+<option value="Н01023068">Чаусы ( Могилевская )</option>
+<option value="Н01015869">Чашники ( Витебская )</option>
+<option value="04810">Чебаркуль ( Челябинская обл )</option>
+<option value="62">Чебоксары ( Чувашская Республика Чувашия )</option>
+<option value="63">Челябинск ( Челябинская обл )</option>
+<option value="Н00104466">Чемодановка ( Пензенская обл Бессоновский р-н )</option>
+<option value="Н01002698">Червень ( Минская )</option>
+<option value="128">Череповец ( Вологодская обл )</option>
+<option value="Н01023066">Чериков ( Могилевская )</option>
+<option value="04407">Черкесск ( Карачаево-Черкесская Респ )</option>
+<option value="03368">Черноголовка ( Московская обл Ногинский р-н )</option>
+<option value="197">Черногорск ( Хакасия Респ )</option>
+<option value="03392">Чехов ( Московская обл )</option>
+<option value="Н01002693">Чечерск ( Гомельская )</option>
+<option value="65">Чита ( Забайкальский край )</option>
+<option value="04691">Чусовой ( Пермский край )</option>
+<option value="140">Шадринск ( Курганская обл )</option>
+<option value="Н00061822">Шайковка ( Калужская обл Кировский р-н )</option>
+<option value="03396">Шатура ( Московская обл )</option>
+<option value="199">Шахты ( Ростовская обл )</option>
+<option value="04525">Шебекино ( Белгородская обл )</option>
+<option value="04562">Шелехов ( Иркутская обл )</option>
+<option value="Н01023065">Шклов ( Могилевская )</option>
+<option value="03301">Шлиссельбург ( Ленинградская обл Кировский р-н )</option>
+<option value="Н01018871">Шумилино ( Витебская )</option>
+<option value="02830">Шумиха ( Курганская обл Шумихинский р-н )</option>
+<option value="21814">Шушары ( Санкт-Петербург )</option>
+<option value="227">Шуя ( Ивановская обл Шуйский р-н )</option>
+<option value="Н00191120">Шымкент ( Туркестанская )</option>
+<option value="262">Щекино ( Тульская обл Щекинский р-н )</option>
+<option value="148">Щёлково ( Московская обл Щелковский р-н )</option>
+<option value="04818">Щербинка ( Москва )</option>
+<option value="Н01023056">Щучин ( Гродненская )</option>
+<option value="Н00163820">Экибастуз ( Павлодарская )</option>
+<option value="04619">Электросталь ( Московская обл )</option>
+<option value="03367">Электроугли ( Московская обл Ногинский р-н )</option>
+<option value="130">Элиста ( Калмыкия Респ )</option>
+<option value="178">Энгельс ( Саратовская обл )</option>
+<option value="Н00078691">Энколово ( Ленинградская обл Всеволожский р-н )</option>
+<option value="Н01023060">Эчмиадзин ( Армавирская )</option>
+<option value="259">Югорск ( Ханты-Мансийский Автономный округ - Югра АО )</option>
+<option value="129">Южно-Сахалинск ( Сахалинская обл )</option>
+<option value="04808">Южноуральск ( Челябинская обл )</option>
+<option value="232">Юрга ( Кемеровская область - Кузбасс обл )</option>
+<option value="Н00000172">Яблоновский ( Адыгея Респ Тахтамукайский р-н )</option>
+<option value="162">Якутск ( Саха /Якутия/ Респ )</option>
+<option value="22036">Ялта ( Крым Респ )</option>
+<option value="04325">Ялуторовск ( Тюменская обл )</option>
+<option value="64">Ярославль ( Ярославская обл )</option>
+<option value="04239">Ярцево ( Смоленская обл Ярцевский р-н )</option>
+<option value="04322">Ясногорск ( Тульская обл Ясногорский р-н )</option>
+</select><div class="field-error"></div></div>
+</div>                </div>
+
+            </form>        </div>
+
+                    <div class="login-reg__row recaptcha">
+                <div style="width:300px;margin:0 auto" class="g-recaptcha" data-sitekey="6Lf64J0UAAAAAFYNTSJ7y-xbSLl5-heWzUjCEq4C"></div>
+            </div>
+        
+        <div class="login-reg__f btn_block login_btn">
+                <div class="login-reg__fc">
+                    <a href="/password-reset/request" class="login-reg__link">Забыли пароль?</a>
+                </div>
+                <div class="login-reg__fc">
+                    <button class="btn-auth js-login-btn">Войти</button>
+                </div>
+        </div>
+        <div class="login-reg__f btn_block register_btn">
+                <div class="check-bl">
+                    <input type="checkbox" class="checkbox" id="agreement" checked>
+                    <label class="js-agreement">Я согласен на обработку персональных данных и получение информационной рассылки от Boxberry</label>
+                </div>
+
+                <div class="reg-btn">
+                    <button class="btn-auth js-register-btn" id="login-page-register-button">Зарегистрироваться</button>
+                </div>
+            </div>
+     </div>
+</div>
+<div class="modal fade" id="personalData" tabindex="-1" role="dialog" aria-labelledby="personalDataTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="personalDataTitle">Согласие на обработку персональных данных</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: justify;">
+                    Настоящим вы подтверждаете свое согласие на обработку ООО «Боксберри» (далее Оператор) зарегистрированному по адресу: 127015, РОССИЯ, МОСКВА Г., МУНИЦИПАЛЬНЫЙ ОКРУГ БУТЫРСКИЙ ВН.ТЕР.Г., НОВОДМИТРОВСКАЯ УЛ., Д. 5А, СТР. 4, ПОМЕЩ./ЧЕРД. 1, КОМ./Ч. КОМ. 3,4,5/14, своих персональных данных, на следующих условиях:
+                </p>
+                <ul style="text-align: justify;">
+                    <li>Оператор осуществляет обработку персональных данных Субъекта ПДн исключительно в целях оказания Вам транспортно-экспедиторских услуг.</li>
+                    <li>Перечень персональных данных, передаваемых Оператору на обработку:</li>
+                </ul>
+                <ol style="text-align: justify;">
+                    <li style="list-style-type: circle;">фамилия, имя и отчество;</li>
+                    <li style="list-style-type: circle;">пол;</li>
+                    <li style="list-style-type: circle;">дата рождения;</li>
+                    <li style="list-style-type: circle;">фактический адрес проживания;</li>
+                    <li style="list-style-type: circle;">личный номер телефона;</li>
+                    <li style="list-style-type: circle;">электронный адрес почты (e-mail);</li>
+                    <li style="list-style-type: circle;">паспортные данные (номер, серия, дата выдачи)</li>
+                </ol>
+                <ul style="text-align: justify;">
+                    <li>Оператор вправе поручить обработку ПДн уполномоченному лицу, осуществляющих обработку ПДн во исполнение договоров, стороной которого либо выгодоприобретателем по которому является субъект персональных данных (п.5, ч. 1 ст. 6, п. 2 ч.4 ст.18 Федеральный закон от 27.07.2006 N 152-ФЗ (ред. от 22.02.2017) «О персональных данных», в том числе сторонним пунктам выдачи для выдачи и оформления заказа клиента; организации, осуществляющей таможенное декларирование товара; сall-центру, для доставки заказа из интернет-магазина, находящегося за пределами РФ.</li>
+                    <li>Вы даете согласие на обработку Оператором своих персональных данных, а именно: сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу, блокирование, удаление, уничтожение персональных данных, а также на передачу такой информации третьим лицам (с использованием и/или без использования шифрования по открытым каналам связи), в случаях, установленных нормативными документами вышестоящих органов, законодательством и условиями договоров по стороной или выгодоприобретателями по которым Вы являетесь.</li>
+                    <li>Настоящее согласие действует до достижения целей обработки персональных данных и (или) до момента отзыва согласия в любое время</li>
+                    <li>Настоящее согласие вы можете отозвать в любой момент по соглашению сторон. В случае неправомерного использования предоставленных данных соглашение отзывается письменным заявлением субъекта персональных данных.</li>
+                    <li>Обращаем ваше внимание, что отзыв Вашего согласия на обработку персональных данных влечёт за собой удаление Вашей учётной записи с Интернет-сайта (<a href="https://account.boxberry.ru">account.boxberry.ru</a>), а также уничтожение записей, содержащих Ваши персональные данные, в системах обработки персональных данных ООО «Боксберри».</li>
+                    <li>Вы по письменному запросу имеете право на получение информации, касающейся обработки его персональных данных (в соответствии с п.3 ст.14 Федерального закона от 27.06.2006&nbsp; № 152-ФЗ).&nbsp;</li>
+                </ul>
+                <p style="text-align: justify;"></p>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div id="agreement-cookie">
+        <div class="col-md-6 col-md-offset-2 col-xs-12 col-xs-offset-0">
+            <p class="font-bold">Сайт использует файлы cookie, которые позволяют узнавать вас и получать информацию о вашем пользовательском опыте.</p>
+            <p>Разрешение на использование cookie необходимо для использования Сайта и его сервисов, включая заказ услуг. Посещая страницы сайта, мы уверены, что вы даете согласие на использование и хранение файлов cookie на вашем устройстве. Если согласны, продолжайте пользоваться сайтом. Если нет – установите специальные настройки в браузере или обратитесь в техподдержку.</p>
+        </div>
+        <div class="col-md-2 col-md-offset-0 col-xs-5 col-xs-offset-4">
+            <button type="button" class="btn btn-success js-agreement-cookie">Согласен</button>
+        </div>
+</div>
+<div class="modal fade" id="bxbModal" tabindex="-1" role="dialog" aria-labelledby="bxbModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close js-bxb-close-btn" data-dismiss="modal" aria-label="Закрыть">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3 class="modal-title" id="bxb-title">Ошибка</h3>
+
+            </div>
+            <div id="bxb-message" style="font-size:14px;" class="modal-body">
+                ...
+            </div>
+            <div id="bxb-footer" class="modal-footer">
+                <button type="button" class="btn btn-default js-bxb-close-btn" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/assets/64ffc59c.0b988e5a247863c99c17d6e5521d66e2/jquery.js"></script>
+<script src="/assets/64ffc59c.476c711a7e42fffb02d751b41757b054/yii.js"></script>
+<script src="/assets/64ffc59c.476c711a7e42fffb02d751b41757b054/yii.validation.js"></script>
+<script src="/assets/64ffc59c.476c711a7e42fffb02d751b41757b054/yii.activeForm.js"></script>
+<script src="/assets/64ffc59c.7e3dc0548367b62c447490c21c44b1ba/punycode.js"></script>
+<script src="/assets/64ffc59c.de98951eb03924383e9ed79c77cbd1a8/js/bootstrap.js"></script>
+<script src="/assets/64ffc59c.9a0454e55c72fabedf13951b46d50717/js/jquery.mask.js"></script>
+<script src="/assets/64ffc59c.f013c936729ca7b9877ee8f73390f8b9/js/cookie.js"></script>
+<script src="/assets/64ffc59c.bfc5d71edc46c2335839a84af0135f44/js/agreement.js"></script>
+<script src="/assets/64ffc59c.b7c59cf656fcad0ed735ed8006ad20cc/js/jquery.formstyler.js"></script>
+<script src="/assets/64ffc59c.7bf67dfeb1ad837f077f4e6e404b43c6/js/select2.js"></script>
+<script src="/assets/64ffc59c.a4d18502a2ccf5f515aaa1a872d99aff/js/auth.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>jQuery(function ($) {
+jQuery('#login-form').yiiActiveForm([{"id":"authorizationform-email","name":"email","container":".field-authorizationform-email","input":"#authorizationform-email","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Email»."});}},{"id":"authorizationform-password","name":"password","container":".field-authorizationform-password","input":"#authorizationform-password","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Пароль»."});}}], []);
+jQuery('#register-form').yiiActiveForm([], []);
+});</script></body>
+</html>
